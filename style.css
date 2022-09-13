@@ -1,0 +1,571 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%; 
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('banner.png');
+    background-position: center;
+    background-size: cover; /*need to learn*/
+    position: relative;
+}
+
+nav{
+    display: flex; /*need to learn*/
+    padding: 2% 6%;
+    justify-content: space-between; /*need to learn*/
+    align-items: center;
+}
+
+nav img{
+    width: 86px;
+}
+
+.nagiation-links{
+    flex: 1; /*need to learn*/
+    text-align: right;
+}
+
+.navigation-links ul li{
+    list-style-type: none; /*need to learn*/
+    display: inline-block;
+    padding: 12px 12px;
+    position: relative; /*need to learn*/
+}
+
+.navigation-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navigation-links ul li::after{ /*need to learn*/
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #0caa0c;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navigation-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 50px;
+}
+
+.text-box p{
+    margin: 10px 0px 40px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.text-box a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border: 1px solid #0caa0c;
+    background: #0caa0c;
+    transition: 1s;
+}
+
+
+/*Courses*/
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.course h1{
+    color: #0caa0c;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.course p{ 
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: #dffadf;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 40px 0px rgba(0,0,0,0.2);
+}
+
+/* campus */
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus h1{
+    color: #0caa0c;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(203, 248, 194, 0.7);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #067206;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* facilities */
+
+.facility{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.facility h1{
+    color: #0caa0c;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.facility-col{
+    flex-basis: 31%;
+    border-radius: 15%;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.facility-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facility-col p{
+    padding: 0;
+}
+
+.facility-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* testimonials */
+
+.testimonial{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonial h1{
+    color: #0caa0c;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #dffadf;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonial-col p{
+    padding: 0;
+}
+
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* call to action */
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('banner2.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #e8fae8;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+.footer h1{
+    color: #0caa0c;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.my{
+    color: rgb(228, 111, 15);
+}
+
+.space{
+    color: rgb(194, 7, 23);
+}
+
+.footer p #link{
+    text-decoration: none;
+}
+
+.footer .others{
+    color: black;
+}
+
+
+/*--------- About Us Page ------------*/
+
+
+.about-header{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('background.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.about-header h1{
+    margin-top: 40px;
+    font-size: 42px;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px; 
+}
+
+.about-col img{
+    width: 100%;
+}
+
+.about-col h1{
+    padding-top: 0;
+    font-size: 30px;
+    color: #0caa0c;
+}
+
+.about-col p{
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-bottom: 25px;
+    font-size: 18px;
+}
+
+.explore-btn{
+    border: 1px solid #0caa0c;
+    background: transparent;
+    color: #0caa0c;
+}
+
+.explore-btn:hover{
+    color: #fff;
+    transition: 1s;
+}
+
+/*--------- Course Page ------------*/
+
+
+.courses-header{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('background.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.courses-header h1{
+    margin-top: 40px;
+    font-size: 42px;
+}
+
+.courses-col img{
+    width: 60%;
+}
+
+.courses{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.courses h1{
+    color: #0caa0c;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.courses p{ 
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses-col{
+    flex-basis: 30%;
+    background: #f5fff5;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.courses-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 29px;
+    color: #076e07;
+}
+
+.courses-col:hover{
+    box-shadow: 0 0 40px 0px rgba(0,0,0,0.2);
+}
+
+#java{
+    width: 69%;
+}
+
+.courses .section-header{
+    margin-top: 4%;
+    font-size: 30px;
+    color: #0caa0c;
+}
+
+#mysql{
+    width: 90%;
+}
+
+#html{
+    width: 55%;
+}
+
+#ui-ux{
+    width: 90%;
+}
+
+#video_editing{
+    width: 85%;
+}
+
+#marketing{
+    width: 100%;
+}
+
+#cyber{
+    width: 80%;
+}
+
+/* executive panel */
+
+.executive-header{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('executive-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.executive-header h1{
+    margin-top: 40px;
+    font-size: 42px;
+}
+
+.executive{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.executive h1{
+    color: #0caa0c;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.executive-col{
+    flex-basis: 43%;
+    background: #dbffdb;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.executive-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 29px;
+    color: #076e07;
+}
+
+.executive-col p{
+    font-size: 23px;
+}
+
+.executive-col:hover{
+    box-shadow: 0 0 40px 0px rgba(0,0,0,0.2);
+}
+
+#saad{
+    width: 70%;
+    border-radius: 20%;
+}
+
+#sakib{
+    width: 70%;
+    border-radius: 20%;
+}
